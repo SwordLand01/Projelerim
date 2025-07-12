@@ -67,16 +67,16 @@
               <a href="./index.html"> ANASAYFA </a>
             </li>
 
-            <li class="header__sm-menu-link">
+            <li class="hmmenulink">
               <a href="./index.html#about"> HAKKIMDA </a>
             </li>
 
-            <li class="header__sm-menu-link">
+            <li class="hmmenulink">
               <a href="./index.html#projects"> PROJELER </a>
             </li>
 
-            <li class="header__sm-menu-link">
-              <a href="./index.html#contact"> İLETİŞİM </a>
+            <li class="hmmenulink">
+              <a href="./index.html#icerik"> İLETİŞİM </a>
             </li>
           </ul>
         </div>
@@ -205,5 +205,23 @@
       </div>
     </footer>
     <script src="./index.js"></script>
+
+     <script>
+ const hamMenuOpen = document.querySelector('.header__main-ham-menu');
+const hamMenuClose = document.querySelector('.header__main-ham-menu-close');
+const kucukMenu = document.querySelector('.kucukmenu');
+
+hamMenuOpen.addEventListener('click', () => {
+  kucukMenu.classList.add('header__sm-menu--active');
+  hamMenuOpen.classList.add('d-none');
+  hamMenuClose.classList.remove('d-none');
+});
+
+hamMenuClose.addEventListener('click', () => {
+  kucukMenu.classList.remove('header__sm-menu--active');
+  hamMenuOpen.classList.remove('d-none');
+  hamMenuClose.classList.add('d-none');
+});
+</script>
   </body>
 </html>

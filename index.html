@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1  0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Portfolyo</title>
     <meta name="description" content="Portfolio Template for Developer" />
@@ -73,7 +73,7 @@
             </li>
 
             <li class="hmmenulink">
-              <a href="./index.html#contact"> İLETİŞİM </a>
+              <a href="./index.html#icerik"> İLETİŞİM </a>
             </li>
           </ul>
         </div>
@@ -326,5 +326,23 @@ Hayalim; zengin olmak ve profesyonel bir yazılımcı olmak.
     </footer>
 
     <script src="./index.js"></script>
+
+    <script>
+ const hamMenuOpen = document.querySelector('.header__main-ham-menu');
+const hamMenuClose = document.querySelector('.header__main-ham-menu-close');
+const kucukMenu = document.querySelector('.kucukmenu');
+
+hamMenuOpen.addEventListener('click', () => {
+  kucukMenu.classList.add('header__sm-menu--active');
+  hamMenuOpen.classList.add('d-none');
+  hamMenuClose.classList.remove('d-none');
+});
+
+hamMenuClose.addEventListener('click', () => {
+  kucukMenu.classList.remove('header__sm-menu--active');
+  hamMenuOpen.classList.remove('d-none');
+  hamMenuClose.classList.add('d-none');
+});
+</script>
   </body>
 </html>

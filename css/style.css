@@ -8,6 +8,7 @@
   font-family: inherit; }
 
 html {
+  box-sizing: border-box;
   font-size: 62.5%;
   scroll-behavior: smooth; }
   @media only screen and (max-width: 75em) {
@@ -24,10 +25,9 @@ body {
   box-sizing: border-box;
   position: relative;
   line-height: 1.5;
-  font-family: sans-serif;
-  overflow-x: hidden;
   overflow-y: scroll;
-  font-family: 'Source Sans Pro', sans-serif; }
+  font-family: 'Source Sans Pro', sans-serif; 
+  min-height: 100vh;}
 
 a {
   text-decoration: none;
@@ -211,6 +211,7 @@ textarea
   {
     .anakısım1 
     {
+      width: 60.8rem;
       height: unset;
       min-height: unset; 
     } 
@@ -244,7 +245,7 @@ textarea
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    max-width: 90rem;
+    max-width: 160rem;
     width: 92%; }
     @media only screen and (max-width: 37.5em) {
       .home-hero__content {
@@ -261,6 +262,13 @@ textarea
 
 .about {
   background: #fafafa; }
+   @media only screen and (max-width: 37.5em)
+  {
+    .about
+    {
+      width: 60.8rem;
+    }
+  }
   .about__content 
   {
     display: grid;
@@ -277,7 +285,8 @@ textarea
       margin-bottom: 3rem; }
       @media only screen and (max-width: 37.5em) {
         .about__content-title {
-          font-size: 2.4rem; } }
+          font-size: 3.5rem; 
+        text-align: center;} }
     .about__content-details-para {
       font-size: 1.8rem;
       color: grey;
@@ -290,6 +299,8 @@ textarea
       .about__content-details-para:last-child {
         margin-bottom: 4rem; }
 
+        @media only screen and (max-width: 37.5em) {
+        #projects { width: 60.7rem;}}
 .projects__row {
   display: grid;
   grid-template-columns: 1.5fr 1fr;
@@ -313,15 +324,28 @@ textarea
     {
       width: 50%;
       margin-left: 19rem;
+    }@media only screen and (max-width: 37.5em) {
+      #htmlcss{
+        margin-left: 0;
+      }
     }
     #c
     {
       margin-left: 17rem;
+    }@media only screen and (max-width: 37.5em) {
+      #c{
+        margin-left: 0;
+        
+      }
     }
     #android
     {
       width: 80%;
       margin-left: 5rem;
+    }@media only screen and (max-width: 37.5em) {
+      #android{
+        margin-left: 0;
+      }
     }
   .projects__row-content {
     padding: 2rem 0;
@@ -353,6 +377,9 @@ textarea
 {
   background-color: lightskyblue;
   background-position: center; }
+   @media only screen and (max-width: 37.5em) {
+    .icerik {width: 60.8rem;}
+   }
   .contact__form-container {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     background: white;
@@ -439,6 +466,7 @@ textarea
   position: relative; }
   @media only screen and (max-width: 37.5em) {
     .project-cs-hero1 {
+      width: 60.8rem;
       height: unset;
       min-height: unset; } }
 
@@ -451,6 +479,7 @@ textarea
   @media only screen and (max-width: 37.5em) {
     .project-cs-hero3 {
       height: unset;
+      width: 60.8rem;
       min-height: unset; } }
 
       .project-cs-hero2 {
@@ -461,6 +490,7 @@ textarea
   position: relative; }
   @media only screen and (max-width: 37.5em) {
     .project-cs-hero2 {
+      width: 60.8rem;
       height: unset;
       min-height: unset; } }
   .project-cs-hero__content {
@@ -491,7 +521,8 @@ textarea
     margin-bottom: 3rem; }
     @media only screen and (max-width: 37.5em) {
       .project-details__content-title {
-        font-size: 2.4rem; } }
+        font-size: 2.6rem;
+      margin-left: 3rem; } }
 
 .project-details__showcase-img-cont {
   width: 100%;
@@ -504,6 +535,9 @@ textarea
   width: 100%;
   max-width: 70rem;
   margin: auto; }
+  @media only screen and (max-width: 37.5em) {
+      .project-details__content-main {
+        width: 50.8rem } }
 
 .project-details__desc {
   margin: 0 0 7rem 0; }
@@ -512,6 +546,9 @@ textarea
     line-height: 1.7;
     color: grey;
     margin-bottom: 2rem; }
+    @media only screen and (max-width: 37.5em) {
+      .project-details__desc-para {
+        margin-left: 3rem; } }
 
 .project-details__tools-used {
   margin: 0 0 7rem 0; }
@@ -537,12 +574,14 @@ textarea
         margin-right: 0;
         width: 70%;
         margin-bottom: 2rem;
+        margin-left: 3rem;
         text-align: center; } }
     .project-details__links-btn:last-child {
       margin: 0; }
       @media only screen and (max-width: 37.5em) {
         .project-details__links-btn:last-child {
-          margin: 0; } }
+          margin-left: 3rem; 
+        } }
 
 .ustkısım 
 {
@@ -665,8 +704,8 @@ textarea
     -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1);
     -moz-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1); }
     .header__sm-menu--active {
-      visibility: hidden;
-      opacity: 0; }
+      visibility: visible;
+      opacity: 1; }
       @media only screen and (max-width: 37.5em) {
         .header__sm-menu--active {
           visibility: visible;
@@ -694,6 +733,11 @@ textarea
 .main-footer {
   background: #000;
   color: #fff; }
+   @media only screen and (max-width: 37.5em) {
+    .main-footer{
+      width: 60.8rem;
+    }
+   }
   .main-footer__upper {
     display: flex;
     justify-content: space-between;
@@ -745,7 +789,7 @@ textarea
 
 .skills 
 {
-  width: 400px;
+  width: 57rem;
   display: flex;
   flex-wrap: wrap;
 }
@@ -758,6 +802,12 @@ textarea
     border-radius: 5px;
     font-weight: 600;
     color: #777; }
+     @media only screen and (max-width: 56.25em) {
+      .skills__skill {
+        text-align: center;
+        margin-left: 3rem;
+       
+      } }
 
 .mouse {
   width: 25px;
